@@ -1,0 +1,23 @@
+script(src="/javascripts/task_model.js", type="text/javascript")
+.logo 
+.logo-text 
+  = title
+.content
+  p Totale minutter: 
+    span(data-bind="text: totalMinutes")
+  .header.text Beskrivelse
+  .header.number Antall minutter
+  .tools
+  .text-end
+  .tasks(data-bind="foreach: tasks") 
+    .text(data-bind="text: description") 
+    .number(data-bind="text: minutes")
+    .tools
+      a(href='#', data-bind='click: $parent.removeTask') 
+        .icon-remove-circle
+    .text-end
+  .input
+    input(class="large", type="text", id="inputDescription", placeholder="Beskrivelse")
+    input(class="small", type="text", id="inputMinutes", placeholder="Minutter")
+    input(class="btn", type="submit", id="addTask", value="Legg til oppgave")
+

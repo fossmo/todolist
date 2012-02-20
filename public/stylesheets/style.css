@@ -1,0 +1,86 @@
+body {
+  color: #696457; 
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+input{
+  border: none;
+  background-color: #f4f4f4;
+  color: #000000;
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin-right: 5px;
+  padding: 5px;
+}
+
+.large{
+  margin-top: 8px;
+  margin-right: 5px;
+  width: 400px;
+}
+
+.small{
+  margin-top: 8px;
+  margin-right: 5px;
+  width: 50px;
+}
+
+.logo{
+  background-image: url('/images/todo.png');
+  float: left;
+  width: 40px;
+  height: 34px;
+}
+
+.logo-text{
+  font-size: 20px;
+  float: left;
+  height: 34px;
+  margin-top: 7px;
+  padding-left: 10px;
+}
+
+.content{
+  clear:left;
+  float:left;
+}
+
+.header{
+  background-color: #696457; 
+  color: #ffffff;
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin-bottom: 5px;
+  padding: 3px;
+}
+
+.text{
+  float: left;
+  width: 300px;
+}
+
+.tools{
+  float: left;
+  height: 17px;
+  margin-top: 6px;
+  margin-left: -30px;
+  text-align: center;
+  width: 50px;
+}
+
+.number{
+  float: left;
+  text-align: center;
+  width: 300px;
+}
+
+.text-end{
+  clear: left;
+}
+
+.input{
+  padding-top:20px;
+}
