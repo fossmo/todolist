@@ -1,11 +1,12 @@
 $(document).ready(function(){
-
+  // Oppgave objektet
   function Task(description, minutes) {
       var self = this;
       self.description = ko.observable(description);
       self.minutes = ko.observable(minutes);
   };
   
+  // Objektet som holder på array av oppgaver
   function TasksViewModel() {
       var self = this;
   
@@ -19,7 +20,7 @@ $(document).ready(function(){
         $.each(self.tasks(), function(){ total += parseInt(this.minutes()) })
         return total;
       });
-  
+
       self.removeTask = function(task) { self.tasks.remove(task) };
   };
   
